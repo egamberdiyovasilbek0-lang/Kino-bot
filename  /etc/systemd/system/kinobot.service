@@ -1,0 +1,7 @@
+sudo apt update && sudo apt install -y python3-venv git
+git clone https://github.com/USERNAME/kino-bot.git
+cd kino-bot
+python3 -m venv venv
+./venv/bin/pip install -r requirements.txt
+cp .env.example .env
+nano .env        # BOT_TOKEN va ADMIN_IDS ni yozing
